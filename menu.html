@@ -1,0 +1,70 @@
+<html>
+<head>
+<body style="background-color:red;">
+
+<span id="liveclock" style="position:absolute;left:0;top:0;">
+</span>
+
+<script language="JavaScript">
+ <!--
+
+function show5(){
+if (!document.layers&&!document.all&&!document.getElementById)
+return
+
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+
+var dn="PM"
+if (hours<12)
+dn="AM"
+if (hours>12)
+hours=hours-12
+if (hours==0)
+hours=12
+
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+
+myclock="<font size='5' face='broadway' color=white><b><font size='3' color=white>Hora actual:</font></br>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b></font>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+
+
+window.onload=show5
+
+ </script>
+
+<br>
+<br>
+<center><font size=4 color=white face="algerian"><marquee scrollamount=5 behavior=alternate>Menu</font></center></marquee>
+<hr color=white size=3 widht=30%>
+
+<OL>
+<LI><A HREF="ventana.html" target="izquierdo"><center><font size=4 color="white" face="arial">Portada</center></font><br></A>
+<LI><A HREF="Historia.html" target="izquierdo"><center><font size=4 color="white" face="arial">Historia De KFC</center></font><br>
+<LI><A HREF="Mision.html" target="izquierdo"><center><font size=4 color="white" face="arial">Misión, Visión</center></font><br>
+<LI><A HREF="Paquetes.html" target="izquierdo"><center><font size=4 color="white" face="arial">Paquetes</center></font><br>
+<LI><A HREF="Box.html" target="izquierdo"><center><font size=4 color="white" face="arial">Paquetes Box</center></font><br>
+<LI><A HREF="Ketiras.html" target="izquierdo"><center><font size=4 color="white" face="arial">Ke-Tiras</center></font><br>
+<LI><A HREF="ham.html" target="izquierdo"><center><font size=4 color="white" face="arial">Hamburguesas</center></font><br>
+<LI><A HREF="pop.html" target="izquierdo"><center><font size=4 color="white" face="arial">Popcorn</center></font><br>
+<LI><A HREF="Ensa.html" target="izquierdo"><center><font size=4 color="white" face="arial">Ensalada</center></font><br>
+<LI><A HREF="end.html" target="izquierdo"><center><font size=4 color="white" face="arial"> KFC </center></font><br>
+</OL>
+
+
+</ol>

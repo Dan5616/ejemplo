@@ -1,0 +1,142 @@
+<html>
+<head>
+<body background = Picture/2C194321.jpg>
+<br>
+
+<span id="theText" style="width:100%"> 
+<h3 align="center"><font color="#3a6ca3"><font size="+5">KFC</font>
+ </font><font color="#666666">
+ 
+ <script>             
+
+var from = 5;                       
+var to = 11;                        
+var delay = 55;                     
+var glowColor = "red";              
+var glowColor2 = "orange";          
+var glowColor3 = "yellow";          
+var glowColor4 = "lime";            
+var glowColor5 = "blue";           
+var glowColor6 = "magenta";         
+
+var i = to;
+var j = 0;
+textPulseDown();
+function textPulseUp()
+{
+if (!document.all)
+return
+if (i < to)
+{
+theText.style.filter = "Glow(Color=" + glowColor + ", Strength=" + i + ")";
+i++;
+theTimeout = setTimeout('textPulseUp()',delay);
+return 0;
+}
+if (i = to)
+{
+theTimeout = setTimeout('textPulseDown()',delay);
+return 0;
+}
+}
+function textPulseDown()
+{
+if (!document.all)
+return
+if (i > from)
+{
+theText.style.filter = "Glow(Color=" + glowColor2 + ", Strength=" + i + ")";
+i--;
+theTimeout = setTimeout('textPulseDown()',delay);
+return 0;
+}
+if (i = from)
+{
+theTimeout = setTimeout('textPulseUp2()',delay);
+return 0;
+}
+}
+function textPulseUp2()
+{
+if (!document.all)
+return
+if (i < to)
+{
+theText.style.filter = "Glow(Color=" + glowColor3 + ", Strength=" + i + ")";
+i++;
+theTimeout = setTimeout('textPulseUp2()',delay);
+return 0;
+}
+if (i = to)
+{
+theTimeout = setTimeout('textPulseDown2()',delay);
+return 0;
+}
+}
+function textPulseDown2()
+{
+if (!document.all)
+return
+if (i > from)
+{
+theText.style.filter = "Glow(Color=" + glowColor4 + ", Strength=" + i + ")";
+i--;
+theTimeout = setTimeout('textPulseDown2()',delay);
+return 0;
+}
+if (i = from)
+{
+theTimeout = setTimeout('textPulseUp3()',delay);
+return 0;
+}
+}
+function textPulseUp3()
+{
+if (!document.all)
+return
+if (i < to)
+{
+theText.style.filter = "Glow(Color=" + glowColor5 + ", Strength=" + i + ")";
+i++;
+theTimeout = setTimeout('textPulseUp3()',delay);
+return 0;
+}
+if (i = to)
+{
+theTimeout = setTimeout('textPulseDown3()',delay);
+return 0;
+}
+}
+function textPulseDown3()
+{
+if (!document.all)
+return
+if (i > from)
+{
+theText.style.filter = "Glow(Color=" + glowColor6 + ", Strength=" + i + ")";
+i--;
+theTimeout = setTimeout('textPulseDown3()',delay);
+return 0;
+}
+if (i = from)
+{
+theTimeout = setTimeout('textPulseUp()',delay);
+return 0;
+}
+}
+
+</script></font></h3></span>
+
+
+
+<img src = "picture/rs_560x415.jpg" WIDTH=40% HEIGHT=45% HSPACE="30" VSPACE="30" >
+
+
+
+<right><iframe width="560" height="315" src="https://www.youtube.com/embed/9n120Z2c0sA" frameborder="0" 
+allowfullscreen></iframe></right>
+
+
+</body>
+</head>
+</html>
